@@ -304,7 +304,7 @@ export default function Dashboard() {
         <div style={{ maxWidth: 960, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", height: 56 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{ width: 28, height: 28, background: "#EEEDFE", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14 }}>⚙</div>
-            <span style={{ fontWeight: 500, fontSize: 15, color: "#1a1a1a" }}>AI Agents</span>
+            <span style={{ fontWeight: 500, fontSize: 15, color: "#1a1a1a" }}>AI Agents dashboard</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <input value={url} onChange={e => setUrl(e.target.value)} placeholder="Enter URL to scan"
