@@ -9,7 +9,7 @@
 //   const { code, fileName } = await req.json();
 
 //   const message = await anthropic.messages.create({
-//     model: "claude-sonnet-4-20250514",
+//     model: "claude-sonnet-4-5",
 //     max_tokens: 4000,
 //     messages: [{
 //       role: "user",
@@ -169,7 +169,7 @@ export async function POST(req: NextRequest) {
     if (!content.trim()) return NextResponse.json({ error: "No content to review" }, { status: 400 });
 
     const message = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-5",
       max_tokens: 4000,
       messages: [{ role: "user", content: buildPrompt(mode, content, sourceLabel) }]
     });
